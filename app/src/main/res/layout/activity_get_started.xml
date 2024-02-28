@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStarted"
+    android:orientation="vertical"
+    app:flow_horizontalAlign="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imgg_3"
+        android:layout_gravity="center"
+        android:layout_marginTop="81dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen3"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screenDesc3"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/zazaza"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_btn"
+        android:layout_gravity="center"
+        android:text="@string/sign_up"
+        android:backgroundTint="@color/blue"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/onb3_text"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/signtext_getstarted"
+            android:text="@string/sign_up"
+            android:clickable="true"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/blue"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

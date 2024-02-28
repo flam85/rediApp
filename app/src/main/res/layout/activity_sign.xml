@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="23dp"
+        android:id="@+id/text_lin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/text_sign1"
+            android:textColor="@color/zazaza"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/text_sign2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/edittext_lin"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/text_lin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/name_text"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:textColorHint="@color/grey_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/hint_phone"
+            android:layout_marginTop="5dp"
+            android:maxLength="11"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:textColorHint="@color/grey_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text"
+            android:hint="@string/hint_email"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:textColorHint="@color/grey_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pw"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="5dp"
+            android:hint="@string/hint_pw"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:textColorHint="@color/grey_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conf_pw"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="5dp"
+            android:hint="@string/hint_pw"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto"
+            android:textColorHint="@color/grey_light" />
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:id="@+id/check_box"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/edittext_lin"
+        android:text="@string/text_sign3"
+        android:textSize="14sp"
+        android:textColor="@color/grey_light"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/sign_btn"
+        android:layout_below="@id/check_box"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/sign_up"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/sign_lin"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/sign_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/text_sign4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/sign_text"
+            android:clickable="true"
+            android:text="@string/sign_up"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/google_sign_lin"
+        android:layout_below="@id/sign_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/text_sign5"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:id="@+id/google_sign"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google_icon"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

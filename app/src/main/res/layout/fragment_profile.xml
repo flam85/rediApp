@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:elevation="7dp"
+        android:backgroundTintMode="add">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="150dp"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/grey"
+            android:text="@string/profile" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notification_btn"
+            android:src="@drawable/notification"
+            android:background="@drawable/bg_notif"
+            android:padding="5dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="130dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_profile"
+            android:layout_marginStart="23dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prof_frag_text1"
+            android:paddingLeft="7dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:text="@string/prof_frag_text2"
+            android:fontFamily="@font/roboto"
+            android:textSize="12sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:src="@drawable/eye_close_icon"/>
+
+    </LinearLayout>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/dark_mode"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="200dp"
+        android:textSize="16sp"
+        android:textColor="@color/zazaza"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="240dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:id="@+id/edit_prof_button"
+            android:text="@string/frag_prof1"
+            android:hint="@string/frag_prof_desc1"
+            android:textColor="@color/zazaza"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="23dp"
+            android:drawableStart="@drawable/profile_icon"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            style="@android:style/Widget.Button"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="10dp"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:id="@+id/edit_prof_button2"
+            android:text="@string/frag_prof2"
+            android:hint="@string/frag_prof_desc2"
+            android:textColor="@color/zazaza"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="23dp"
+            android:layout_marginTop="10dp"
+            style="@android:style/Widget.Button"
+            android:drawableStart="@drawable/group_1_"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="10dp"
+            tools:ignore="RtlCompat" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:id="@+id/edit_prof_button3"
+            android:text="@string/frag_prof3"
+            android:hint="@string/frag_prof_desc3"
+            android:textColor="@color/zazaza"
+            android:textSize="16sp"
+            style="@android:style/Widget.Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="23dp"
+            android:drawableStart="@drawable/notification"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="10dp"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:id="@+id/edit_prof_button4"
+            android:text="@string/frag_prof4"
+            android:hint="@string/frag_prof_desc4"
+            android:textColor="@color/zazaza"
+            android:textSize="16sp"
+            style="@android:style/Widget.Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="23dp"
+            android:drawableStart="@drawable/wallet"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="10dp"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:id="@+id/edit_prof_button5"
+            android:text="@string/frag_prof5"
+            android:hint="@string/frag_prof_desc5"
+            android:textColor="@color/zazaza"
+            android:textSize="16sp"
+            style="@android:style/Widget.Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="23dp"
+            android:drawableStart="@drawable/carbon_two_person_lift"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="10dp"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:id="@+id/edit_prof_button6"
+            android:text="@string/frag_prof6"
+            android:hint="@string/frag_prof_desc6"
+            android:textColor="@color/zazaza"
+            android:textSize="16sp"
+            style="@android:style/Widget.Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="23dp"
+            android:drawableStart="@drawable/map"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="10dp"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:id="@+id/edit_prof_button7"
+            android:text="@string/frag_prof7"
+            android:hint="@string/frag_prof_desc1"
+            android:textColor="@color/zazaza"
+            android:textSize="16sp"
+            style="@android:style/Widget.Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="23dp"
+            android:drawableStart="@drawable/log_out"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="10dp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
